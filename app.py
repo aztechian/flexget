@@ -13,7 +13,7 @@ if os.environ.get('FG_COMMAND'):
 
 if len(args) > 0:
   if debug:
-    print "Starting flexget with: %s" % args
+    print ("Starting flexget with: %s" % args)
   flexget.main(args)
 else:
   flexget.main()
