@@ -8,8 +8,8 @@ if debug in ['Yes','yes','true','True','on','1']:
   debug = True
 if os.environ.get('FG_CONFIG'):
   args.extend(["-c", os.environ.get('FG_CONFIG')])
-if os.environ.get('FG_COMMAND'):
-  args.extend(os.environ.get('FG_COMMAND','daemon start').split(' '))
+
+args.extend(os.environ.get('FG_COMMAND','daemon start').split(' '))
 
 if len(args) > 0:
   if debug:
