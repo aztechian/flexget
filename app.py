@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 
 import flexget, sys, os
+
 args = []
 if os.environ.get('FG_CONFIG'):
   args.extend(["-c", os.environ.get('FG_CONFIG')])
